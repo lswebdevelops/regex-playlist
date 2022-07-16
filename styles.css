@@ -22,3 +22,24 @@ input{
     border: 3px solid #ccc;
     outline: none !important;
 }
+
+/* validation styles */
+
+input.valid{
+    border-color: rgb(0, 128, 0);
+   
+}
+input.invalid{
+    border-color: orangered;
+}
+input + p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orangered;
+    opacity: 0;
+}
+input.invalid + p{
+    opacity: 1;
+
+}
